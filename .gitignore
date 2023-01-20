@@ -1,3 +1,4 @@
+dist/
 # Logs
 logs
 *.log
@@ -32,3 +33,4 @@ doc-test
 *.DS_Store
 .AppleDouble
 .LSOverride
+
