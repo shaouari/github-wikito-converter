@@ -55,7 +55,8 @@ class Markdown {
     this.mainRenderer.image = function(href, title, text) {
       if (!href.match(/^https?:\/\//)) {
         href = removeBackslash(href);
-        href = href.replace(/%20/g, " ")
+        href = href.replace(/%20/g, " ");
+        href = href.replace(/&amp;/g, "&");
         href = path.resolve(self.wikiPath, href)
         return util.format('<img src="%s" />', datauri(href))
       } else {
